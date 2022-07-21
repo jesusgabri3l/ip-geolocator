@@ -5,13 +5,15 @@ import "./styles/styles.scss";
 import Header from './components/Header';
 
 function App() {
+  
   const map = createRef();
   const [currentPosition, setCurrentPosition] = useState([]);
-  
+  // -- //
   const onSubmitIPHandler = (coords) => {
     if(map.current) {
+      const ZOOM = 15;
       setCurrentPosition(coords);
-      map.current.flyTo(coords, 15);
+      map.current.flyTo(coords, ZOOM);
     }
   }
     
@@ -33,7 +35,7 @@ function App() {
           ) : (
             <Marker position={currentPosition}>
               <Popup>
-                This is the position of the current IP
+                Current IP position
               </Popup>
             </Marker>
           )}
