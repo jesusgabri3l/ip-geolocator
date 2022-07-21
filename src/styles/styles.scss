@@ -27,7 +27,7 @@
             letter-spacing: 0.2px;
             word-spacing: 1px;
             @media only screen and (max-width: $S-PHONE) {
-                font-size: 24px;
+                font-size: 20px;
             }
         }
     }
@@ -58,6 +58,10 @@
             @media only screen and (max-width: $TABLETS) {
                 width: 80%;
             }
+            @media only screen and (max-width: $S-PHONE) {
+              font-size: 16px;
+              padding: 10px;
+          }
         }
         &__button{
             background-color: #000;
@@ -88,14 +92,18 @@
         z-index: 999;
         @media only screen and (max-width: $TABLETS) {
             flex-direction: column;
-            top: 50%;
-            height: 100%;
-            padding: 20px 30px;
-        }
-        @media only screen and (max-width: $S-PHONE) {
-            top: 55%;
-            padding: 20px 30px;
+            top: 60%;
             height: 105%;
+            padding: 20px 30px;
+            justify-content: space-around;
+        }
+        @media only screen and (max-width: $M-PHONE) {
+          top: 55%;
+          height: 100%;
+      }
+        @media only screen and (max-width: $S-PHONE) {
+            top: 60%;
+            height: 120%;
         }
         .result{
             width: 100%;
@@ -119,21 +127,25 @@
                     display: block;
                     text-align: center;
                 }
-                @media only screen and (max-width: $S-PHONE) {
-                    font-size: 11px;
-                }
+                @media only screen and (max-width: $M-PHONE) {
+                  font-size: 11px;
+              }
             }
             &__text{
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 18px;
                 margin-top: 15px;
                 @media only screen and (max-width: $TABLETS) {
                     text-align: center;
                     margin-top: 5px;
                     margin-bottom: 20px;
                 }
-                @media only screen and (max-width: $S-PHONE) {
-                    font-size: 17px;
+                @media only screen and (max-width: $M-PHONE) {
+                    font-size: 15px;
+                    max-width: 100%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
             }
         }
