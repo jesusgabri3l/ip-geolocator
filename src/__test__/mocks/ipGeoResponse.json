@@ -1,0 +1,59 @@
+[
+    {
+        "ip": "8.8.8.8",
+        "location": {
+            "country": "US",
+            "region": "California",
+            "city": "Mountain View",
+            "lat": 37.38605,
+            "lng": -122.08385,
+            "postalCode": "94035",
+            "timezone": "-07:00",
+            "geonameId": 5375480
+        },
+        "domains": [
+            "80ker.com",
+            "a2k4dgv.bar",
+            "agrifert.com.sg",
+            "cjgmggp.bar",
+            "d720b0e0-4c2e-4501-bec9-a90621d8ea96.pong.s.elliq.co"
+        ],
+        "as": {
+            "asn": 15169,
+            "name": "GOOGLE",
+            "route": "8.8.8.0/24",
+            "domain": "https://about.google/intl/en/",
+            "type": "Content"
+        },
+        "isp": "Google LLC"
+
+    },
+    {
+        "ip": "208.67.222.222",
+        "location": {
+            "country": "CA",
+            "region": "Ontario",
+            "city": "Toronto",
+            "lat": 43.70011,
+            "lng": -79.4163,
+            "postalCode": "",
+            "timezone": "-04:00",
+            "geonameId": 6167865
+        },
+        "domains": [
+            "indigoshirelibraries.com.au",
+            "3sistersgardenco.com",
+            "accessbny.com",
+            "alerts-bnymellon.com",
+            "apdigitalseva.com"
+        ],
+        "as": {
+            "asn": 36692,
+            "name": "OPENDNS",
+            "route": "208.67.222.0/24",
+            "domain": "http://www.opendns.com/",
+            "type": "Content"
+        },
+        "isp": "Cisco OpenDNS, LLC"
+    }
+]

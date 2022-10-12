@@ -63,19 +63,20 @@ function Header({onSubmitIPHandler}) {
       <h1 className="header__title">IP Address tracker</h1>
       <div className="search">
         <input
-          placeholder="Search for any IP address or domain"
+          role="input"
+          placeholder="Search for any IP address"
           className={error ? 'search__input hasError' : 'search__input'}
           onChange={(e) => setIP(e.target.value)}
           value={ip}
           type="text"
           onKeyPress={(e) => (e.key === "Enter" ? onSubmitIpAddress() : () => {})}
         />
-        <button className="search__button" onClick={() => onSubmitIpAddress()}>
+        <button className="search__button" onClick={() => onSubmitIpAddress()} role="button-submit">
           <img src={arrow} alt="icon" />
         </button>
       </div>
       {
-          error && <span className="error">{error}</span>
+          error && <span className="error" data-testid="error">{error}</span>
       }
       <Results ipInfo={ipInfo} loading={loading} />
     </div>

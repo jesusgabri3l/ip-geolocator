@@ -1,6 +1,6 @@
 function Loading () {
     return (
-        <div className="lds-ellipsis">
+        <div className="lds-ellipsis" data-testid="loading">
         <div></div>
         <div></div>
         <div></div>
